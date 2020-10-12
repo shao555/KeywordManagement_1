@@ -10,19 +10,19 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
-        findAll();
+//        findAll();
 //        findByName();
 
 //        add();
 
-//        del();
+        del();
 
 
     }
 
     private static void del() throws Exception {
         KeywordServiceImpl ksi = new KeywordServiceImpl();
-        boolean b = ksi.delKeyword(4);
+        boolean b = ksi.delKeyword(8);
         if (b) {
             System.out.println("删除成功");
         } else {
@@ -63,3 +63,5 @@ public class Test {
         }
     }
 }
+
+
